@@ -1,0 +1,224 @@
+:root {
+    --light-green: #66D37E;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: white;
+}
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 8%;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.332);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #66D37E;
+}
+
+.navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1.5rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color:#66D37E;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-nav .button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: #ffff;
+    background-color: #66D37E;
+    border-radius: 8px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .button:hover {
+    background-color: #60C376;
+    color: #ffff;
+    transform: scale(1);
+}
+
+.showcase-area .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #66D37E;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.description {
+    color: #66D37E;
+    font-size: 1.1rem;
+    margin: 1rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.doctors {
+    width: 100%;
+    transform: translate(15%, 25px);
+}
+
+.medical {
+    width: 90%;
+    transform: translate(0%, 15px);
+}
+
+.showcase-area .container .right form
+{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+.showcase-area .container .right .title 
+{
+    font-size: 30px;
+    text-align: center;
+    color: #60C376;
+    font-weight: 600;
+}
+
+form input {
+    height: 60px;
+    outline: none;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 8px;
+}
+
+form .inputbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"]
+{
+    height: 16px;
+    width: 16px;
+    accent-color: #60C376;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+label {
+    cursor: pointer;
+    color: #60C376;
+    margin-top: 5px;
+}
+
+button#submit-form {
+    background-color: #66D37E; 
+    font-weight: 300;
+    color: #ffffff; 
+    border-radius: 8px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    justify-content: center;
+}
+
+button#submit-form:hover {
+    background-color: #60C376;
+}
+
+footer {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #66D37E;
+}
+
+footer p
+{
+    color: #ffff;
+}
+
+footer a
+{
+    color: #ffff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}

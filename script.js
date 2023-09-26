@@ -45,13 +45,12 @@ return true;
 }
 
 function submit() {
-event.preventDefault(); // prevent the form from submitting and refreshing the page
+event.preventDefault(); 
 if (!validateFormData(handleGetFormData())) {
   document.getElementById('warning').textContent = 'Periksa form anda sekali lagi';
 } else {
   document.getElementById('warning').textContent = '';
-  // submit the form or perform other actions
-}
+  
 }
 
 document.querySelector('form').addEventListener('submit', submit);
